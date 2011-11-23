@@ -200,11 +200,13 @@ footer{clear:both}
  * */
 
 /*.hfeed{ background: #fff url(images/basket-header.png) repeat-x}*/
-.main{min-height:825px;padding-left:215px;position:relative;width:785px;margin:15px auto; }
+.main{min-height:825px;position:relative;width:1000px;margin:15px auto; }
+.main .primary{float:right; text-align:left; width:785px}
 #ie6 .main{height:600px; overflow:visible}
 .branding{width:1000px;margin:0 auto; position:relative}
 /*.primary{ width:760px}*/
-.widget-area{position:absolute; left:0; top:0;float:left;}
+/*.widget-area{position:absolute; left:0; top:0;float:left;}*/
+.widget-area{float:left;}
 .site-logo{height:60px; padding:15px}
 .site-logo h1 img{width:100px ; height:50px;}
 .site-logo{color:#555}
@@ -229,9 +231,9 @@ footer{clear:both}
 
 -----------------------------------------------*/
 .product-list{padding:15px 0}
-.product-list .product-item{position:relative;float:left; width:170px;height:210px;  padding:4px; border:1px solid #eee; text-align:center;margin:0 15px 15px 0}
-.product-list .product-item .product-photo{display:block; height:180px; line-height:180px;}
-.product-list .product-item .product-title{display:block;line-height:24px; font-size:12px; }
+.product-list .product-item{position:relative;float:left; width:170px;height:160px;  padding:4px; border:1px solid #eee; text-align:center;margin:0 15px 15px 0}
+.product-list .product-item .product-photo{display:block; height:126px; line-height:126px;}
+.product-list .product-item .product-title{display:block;line-height:18px; font-size:12px; }
 .product-list .product-item img{vertical-align:middle}
 .product-list .checkbox{position:absolute; left:0; top:10px}
 
@@ -336,3 +338,11 @@ footer{clear:both}
 
 .links{margin-top:15px;}
 .links li{line-height:24px;}
+/*product 分类展示页*/
+.cat-list{width:785px; float:left; margin-right:15px}
+.cat-list .cat-item{height:72px;padding:18px 0; border-bottom:1px solid #eee;}
+.cat-list .cat-item h2{float:left;font-size:16px; font-weight:700; width:150px;height:72px; padding-left:8px;  border-left:4px solid #9bda85;}
+.cat-list .cat-item .count{display:block; height:24px; font-weight:400; color:#888; font-size:11px}
+.cat-list .cat-item ul li{float:left;margin-right:10px;padding:4px; border:1px solid #EEEEEE}
+.cat-list .cat-item ul li img{width:80px; height:60px; vertical-align:middle}
+.suggest-area{width:200px; float:left;}

@@ -34,7 +34,7 @@ if ( $query->have_posts() ) : ?>
 			<?php endif; ?>
 
 <?php
-$query = new WP_Query( array ( 'showposts' => 10, 'orderby' => 'post_modified', 'order' => 'desc'  ) );
+$query = new WP_Query( array ( 'showposts' => 16, 'orderby' => 'post_modified', 'order' => 'desc'  ) );
 //var_dump ($query);
 if ( $query->have_posts() ) : ?>
 				<?php /* Start the Loop */ ?>

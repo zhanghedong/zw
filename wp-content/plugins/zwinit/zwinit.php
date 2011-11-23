@@ -18,18 +18,18 @@ Author URI:
 
 //////////////添加自定义字段
 $new_meta_boxes = array(
-    "description" => array(
-        "name" => "description",
-        "std" => "",
-        "title" => "Description:"),
-    "unit" => array(
-        "name" => "unit",
-        "std" => "",
-        "title" => "Unit:"),
+    //"description" => array(
+        //"name" => "description",
+        //"std" => "",
+        //"title" => "Description:"),
     "item" => array(
         "name" => "unit",
         "std" => "",
         "title" => "unit:"),
+    "unit" => array(
+        "name" => "unit",
+        "std" => "",
+        "title" => "Unit:"),
     "item" => array(
         "name" => "item",
         "std" => "",
@@ -50,7 +50,12 @@ $new_meta_boxes = array(
     "qty" => array(
         "name" => "qty",
         "std" => "",
-        "title" => "qty:")
+        "title" => "qty:"),
+    "manufacturers" => array(
+        "name" => "manufacturers",
+        "std" => "",
+	"type" => "selectM",
+        "title" => "manufacturers:")
 );
 
 
@@ -67,7 +72,10 @@ function new_meta_boxes() {
 
         // 自定义字段标题
         echo'<h4>'.$meta_box['title'].'</h4>';
-       if( $meta_box['type'] == 'textarea' ){
+       if( $meta_box['type'] == 'selectM' ){
+        // 自定义字段输入框
+	       echo '<select class="regular-select"  name="'.$meta_box['name'].'_value" ><option value="富鑫">富鑫</option><option value="阳松">阳松</option></select><br />';
+       }else if( $meta_box['type'] == 'textarea' ){
         // 自定义字段输入框
 	       echo '<textarea class="regular-textarea"  name="'.$meta_box['name'].'_value" >' . $meta_box_value . '</textarea><br />';
        }else{

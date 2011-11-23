@@ -41,7 +41,6 @@ if ( 'content' != $current_layout ) :
 <div class="links widget">
  <ul>
    <li><a href="http://www.z-n-w.com" target="_blank">www.z-n-w.com</a></li>
-   <li><a href="http://craft-markets.com" target="_blank">www.craft-markets.com</a></li>
  </ul>
 </div>
 		</div><!-- #secondary .widget-area -->

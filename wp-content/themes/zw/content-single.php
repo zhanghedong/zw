@@ -61,10 +61,10 @@ return   $str;
 	?>
      </div>
 	    <div class="entry-info">
-<h1 class="entry-title"><?php echo $description_value;?></h1>
+<h1 class="entry-title"><?php the_title();?></h1>
                <h4>Product Details</h4>
                <ul>
-                 <li><label>Item#：</label><strong><?php the_title(); ?></strong></li>
+                 <li><label>Item#：</label><strong><?php echo $item_value; ?></strong></li>
 		 <li><label>Unit：</label><strong><?php echo $unit_value;?></strong></li>
 		 <li><label>Size(cm)：</label><strong><?php echo $size_value;?></strong></li>
 		 <li><label>Pack/CTN：</label><strong><?php echo $pack_value;?></strong></li>
