@@ -142,20 +142,16 @@ function comment_mail($comment_id,$comment){
 
 	/////保存当前评论ID
 	add_option('comment_id_current',$comment_id);
-	//Get current options from database
+
+
+	/*暂时关闭邮件通知功能
 	$email_to = stripslashes(get_option('admin_email'));
-	//// Update options if user posted new information
 	$tel= stripslashes($_POST['tel']);
 	$email= stripslashes($_POST['email']);
 	$author= stripslashes($_POST['author']);
 	$subject= stripslashes($_POST['subject']);
 	$comment= stripslashes($_POST['comment']);
 	$productname= stripslashes($_POST['productname']);
-	
-	//$content .=   $comment . '&nbsp;&nbsp;&nbsp;&nbsp;author:';
-	//$content .=   $author . '&nbsp;&nbsp;&nbsp;&nbsp;email:';
-	//$content .=   $email . '&nbsp;&nbsp;&nbsp;&nbsp;tel:';
-	//$content .=  $tel . '&nbsp;&nbsp;&nbsp;&nbsp;product list:';
   	 $content .="Dear:webmaster \n\n ";
 	 $content .=  $comment ;
 	 $content .=" \n\n author:";
@@ -170,14 +166,17 @@ function comment_mail($comment_id,$comment){
 	 }
 	 $content .=" \n\n";
 	wp_mail($email_to,$subject,$content);
-	global $phpmailer;
+	//global $phpmailer;
 	//if ( $phpmailer->ErrorInfo != "" ) {
                //echo 'abc';
 	//} else {
 		//echo 'cde';
-	//}
+	 //}
+	 */
 }
-/*加载自定义样式*/
+
+
+/*同时邮件通知*/
 add_action ( 'wp_insert_comment', comment_mail, 10, 2 );
 
 

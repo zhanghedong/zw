@@ -20,7 +20,7 @@
 <?php
 $current_comment_id = get_option('comment_id_current');
 if( $current_comment_id > 0){
-	echo '<div class="tip-0">E-mail sent successfully</div>';
+	echo '<div class="tip-0">sent successfully</div>';
 	delete_option('comment_id_current');
 }
 $BasketFavProductName =  $_GET['BasketFavProductName'];

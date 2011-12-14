@@ -24,14 +24,7 @@ get_header();
 				<?php comments_template( '', true ); ?>
                 
 <div class="c-info">
-<p>FUZHOU BES HOME DECOR CO., LTD </p>
-<p>Add.: 5/F, 1# BUILDING, NO.7 JINZHOU NORTH ROAD, JINSHAN, FUZHOU, CHINA </p>
-<p>Tel: +0086-591-28053590/79</p>
-<p>Fax: +0086-591-28053580</p>
-<p>E-mail: sales@fzbes.com</p>
-<p><a href="http://www.fzbes.com" target="_blank">http://www.fzbes.com</a></p>
-<p><a href="http://www.fzbes.com.cn" target="_blank">http://www.fzbes.com.cn</a></p>
-<p><a href="http://www.clock-clock.com" target="_blank">http://www.clock-clock.com</a></p>
+
 </div>
                               </div>
 			</div><!-- #content -->
